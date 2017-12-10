@@ -1,0 +1,1 @@
+blih -u $LOGIN sshkey upload /root/.ssh/id_rsa.pub
