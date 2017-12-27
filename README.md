@@ -52,6 +52,7 @@ This project comes with some executables that can be usefulls when you will work
 - mrclean (clean junk files)
 - push (push your project)
 - repogit $1 (create the $1 repository and set the valid rights to ramassage-tek)
+- zsh (with ohmyzsh)
 
 ## Author
 
