@@ -1,6 +1,5 @@
-LOGIN=firstname.lastname@epitech.eu
 NAME=epitech_container
-COMMAND=bash
+COMMAND=zsh
 
 build:
 	cp ~/.ssh/id_rsa build_sources/id_rsa
@@ -8,6 +7,6 @@ build:
 	docker build -t $(NAME) .
 
 run:
-	docker run -v ${CURDIR}/../:/workspace --env LOGIN=$(LOGIN) -it --rm $(NAME) $(COMMAND)
+	docker run -v ${CURDIR}/../:/workspace -it --rm $(NAME) $(COMMAND)
 
 launch: build run

@@ -18,7 +18,7 @@ ssh-keygen -t rsa
 
 ## Installing container
 
-After cloning the project at the root of your working repository, go to the EpitechDocker folder, open the Makefile file and, in the first line, replace firstname.lastname@epitech.eu with your epitech login.
+After cloning the project at the root of your working repository, go to the EpitechDocker folder, open the Dockefile and, in line 17, replace firstname.lastname@epitech.eu with your epitech login.
 Then execute the following command:
 
 ```
