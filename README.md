@@ -1,59 +1,59 @@
 # EpitechDocker
 
-This container allows to Epitech students to build and test their projects with the same linux distribution than the unit tests.
+Ce conteneur permet aux étudiants d'Epitech de tester leurs projets sur la même distribution Linux que celle utilisée pour les tests unitaires.
 
-## Prerequisites
+## Prérequis
 
-Obviously, you will need to be an Epitech Student and have a valid login to use the features of the container.
+Évidemment, vous devez être un étudiant d'Epitech et avoir un login valide pour utiliser ce conteneur.
 
-To install this container, you will need to install [Docker](https://www.docker.com/).
-Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.
-It exists on Linux, Windows and MacOS
+Pour installer ce conteneur, vous devez installer [Docker](https://www.docker.com/).  
+Docker est un logiciel libre qui automatise le déploiement d'application dans des conteneurs logiciels.  
+Il est disponible sur Windows, Mac et Linux.
 
-Then, you will need to generate a sshkey on your local machine with the following command:
+Ensuite, vous devrez générer une clé ssh sur votre système à l'aide de la commande suivante:
 
 ```
 ssh-keygen -t rsa
 ```
 
-## Installing container
+## Installation du conteneur
 
-After cloning the project at the root of your working repository, go to the EpitechDocker folder, open the Dockefile and, in line 17, replace firstname.lastname@epitech.eu with your epitech login.
-Then execute the following command:
+Après avoir cloné le projet à la racine de votre espace de travail, allez dans le dossier EpitechDocker, ouvrez le fichier Dockerfile et, à la ligne 17, remplacez firstname.lastname@epitech.eu par votre login Epitech.
+Ensuite, exécutez la commande suivante:
 
 ```
 make build
 ```
-It will build the container, it can takes a few minutes.
-If it crashes, verify that docker is installed and the file id_rsa.pub in ~/.ssh/ directory.
+Cela va construire le conteneur, cette opération peut prendre plusieurs minutes.
+Si l'installation échoue, vérifiez que docker est bien installé et que le fichier id_rsa.pub existe bien dans le dossier ~/.ssh/
 
-If it success, enter:
+Si l'installation est un succès, entrez:
 
 ```
 make run
 ```
 
-You are now in the container !
-You can see there is a copy of the folder where you put the project, it allows you to access to your project directly in the container.
+Vous êtes maintenant dans le conteneur !
+Vous pouvez voir qu'il y a une copie du dossier dans lequel vous avez cloné le projet, cela vous permet d'accéder à votre espace de travail directement dans le conteneur.
 
-To quit the container, enter:
+Pour quitter le conteneur, entrez:
 
 ```
 exit
 ```
 
-You will need to execute "make run" every time you want to enter to the container.
+Vous devrez exécuter la commande ```make run``` dans le dossier EpitechDocker à chaque fois que vous voudrez entrer dans le conteneur.
 
-## Executables
+## Exécutables
 
-This project comes with some executables that can be usefulls when you will work on your project:
-- clone $1 (clone the $1 repository)
-- uploadssh (upload your sshkey to blih)
-- mrclean (clean junk files)
-- push (push your project)
-- repogit $1 (create the $1 repository and set the valid rights to ramassage-tek)
-- zsh (with ohmyzsh)
+Ce projet dispose de plusieurs exécutables utilisables au sein du conteneur qui peuvent être utiles lorsque vous travaillez sur vos projets:
+- clone $1 (clone le répertoire $1)
+- uploadssh (envoie une nouvelle clé ssh à BLIH)
+- mrclean (supprime les fichiers temporaires)
+- push (push votre projet avec git)
+- repogit $1 (créé le répertoire $1 et défini les droits valides à ramassage-tek)
+- zsh (avec ohmyzsh)
 
-## Author
+## Auteur
 
-* **Lucas LE RAY** - *Initial work* - [LucasLeRay](https://github.com/LucasLeRay)# EpitechDocker
+* **Lucas LE RAY** - [LucasLeRay](https://github.com/LucasLeRay)
