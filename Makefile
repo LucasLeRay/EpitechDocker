@@ -7,6 +7,6 @@ build:
 	docker build -t $(NAME) .
 
 run:
-	docker run -v ${CURDIR}/../:/workspace -it --rm $(NAME) $(COMMAND)
+	docker run -v ${CURDIR}/../:/workspace -e DISPLAY=10.20.86.103:0 -v="/tmp/.X11-unix:/tmp/.X11-unix:rw" --privileged -it --rm $(NAME) $(COMMAND)
 
 launch: build run
