@@ -18,7 +18,7 @@ ssh-keygen -t rsa
 
 ## Installation du conteneur
 
-Après avoir cloné le projet à la racine de votre espace de travail, allez dans le dossier EpitechDocker, ouvrez le fichier Dockerfile et, à la ligne 17, remplacez firstname.lastname@epitech.eu par votre login Epitech.
+Après avoir cloné le projet à la racine de votre espace de travail, allez dans le dossier EpitechDocker, ouvrez le fichier Dockerfile et, à la ligne 16, remplacez lucas.le-ray@epitech.eu par votre login Epitech.
 Ensuite, exécutez la commande suivante:
 
 ```
