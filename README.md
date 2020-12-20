@@ -1,6 +1,6 @@
 # EpitechDocker
 
-Ce conteneur permet aux étudiants d'Epitech de tester leurs projets sur la même distribution Linux que celle utilisée pour les tests unitaires.
+Ce conteneur permet aux étudiants d'Epitech de tester leurs projets sur la même distribution Linux que celle utilisée pour les tests unitaires. Il est à jour pour 2021
 
 ## Prérequis
 
@@ -48,12 +48,15 @@ Vous devrez exécuter la commande ```make run``` dans le dossier EpitechDocker �
 
 Ce projet dispose de plusieurs exécutables utilisables au sein du conteneur qui peuvent être utiles lorsque vous travaillez sur vos projets:
 - clone $1 (clone le répertoire $1)
-- uploadssh (envoie une nouvelle clé ssh à BLIH)
 - mrclean (supprime les fichiers temporaires)
 - push (push votre projet avec git)
-- repogit $1 (créé le répertoire $1 et défini les droits valides à ramassage-tek)
 - zsh (avec ohmyzsh)
+- norminette (issu du repo https://github.com/Gegel85/norminette, pour détecter vos erreurs de norme)
 
 ## Auteur
 
 * **Lucas LE RAY** - [LucasLeRay](https://github.com/LucasLeRay)
+
+## Contributeurs
+
+* **Florian KAMPS** - [FlorianKamps](https://github.com/RootMestudy)
